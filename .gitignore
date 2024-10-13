@@ -1,0 +1,11 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Project Folders
+/agents
+/dev
+

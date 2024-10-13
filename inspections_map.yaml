@@ -1,0 +1,601 @@
+__init__: []
+main:
+- name: child_break_banner
+  module: main
+  status: untested
+  docstring: null
+- name: main_intro
+  module: main
+  status: untested
+  docstring: null
+- name: ollama_pull_model
+  module: main
+  status: untested
+  docstring: "\n    Download a model from the Ollama server.\n\n    :param model_name:\
+    \ The name of the model to download.\n    "
+- name: print_dev_stamp
+  module: main
+  status: untested
+  docstring: "\n    Purposeful re-use of stream_terminal_output to print the dev stamp\
+    \ so I don't have to type it out every time.\n\n    :param dev_stamp: The dev\
+    \ stamp to stream.\n    :returns: Prints streaming dev stamp to terminal\n    "
+- name: print_main_banner
+  module: main
+  status: untested
+  docstring: "\n    Prints the main banner at init.\n\n    :returns: Prints main banner\
+    \ to terminal\n    "
+- name: print_main_menu
+  module: main
+  status: untested
+  docstring: "\n    Pretty sure the name says it all on this one but here is a docstring\
+    \ to appease the linting gods..\n    "
+- name: stream_disco_def
+  module: main
+  status: untested
+  docstring: "\n    Streams the verbose definition of DISCO.\n\n    :returns: Prints\
+    \ streaming DISCO definitions to terminal\n    "
+- name: stream_terminal_output
+  module: main
+  status: untested
+  docstring: "\n    Print string one character at a time with a defined delay between\
+    \ characters. I do not like relying on streaming methods from completion endpoints.\
+    \ This is a better way to do it anyway. Agents can talk at different speeds depending\
+    \ on need and will be able to be changed en-chat with a parsed command (eventually)\n\
+    \n    :param text: The string to print\n    :param delay: The delay between printing\
+    \ each character\n    :returns: Prints streaming text to terminal\n    "
+ollama_cli:
+- name: ollama_list_downloaded_models
+  module: ollama_cli
+  status: untested
+  docstring: "\n    Lists all the models you have downloaded from the Ollama server.\n\
+    \    "
+- name: ollama_pull_model
+  module: ollama_cli
+  status: untested
+  docstring: "\n    Download a model from the Ollama server.\n\n    :param model_name:\
+    \ The name of the model to download.\n    "
+- name: ollama_remove_model
+  module: ollama_cli
+  status: untested
+  docstring: "\n    Remove a model from your local Ollama repo.\n\n    :param model_name:\
+    \ The name of the model to remove.\n    "
+- name: print_dev_stamp
+  module: ollama_cli
+  status: untested
+  docstring: "\n    Purposeful re-use of stream_terminal_output to print the dev stamp\
+    \ so I don't have to type it out every time.\n\n    :param dev_stamp: The dev\
+    \ stamp to stream.\n    :returns: Prints streaming dev stamp to terminal\n    "
+- name: print_ollama_intro
+  module: ollama_cli
+  status: untested
+  docstring: null
+- name: print_ollama_menu
+  module: ollama_cli
+  status: untested
+  docstring: "\n    Menu for the Ollama Library. \n    "
+- name: toilet_banner_metal
+  module: ollama_cli
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Metal\n\n    :param text: The text to bannerize.\n    :return: Print\
+    \ the bannerized text.\n    "
+agent_library_cli:
+- name: print_agentslib_intro
+  module: agent_library_cli
+  status: untested
+  docstring: null
+- name: print_agentslib_menu
+  module: agent_library_cli
+  status: untested
+  docstring: "\n    Menu for the agents lobby.\n    "
+- name: print_dev_stamp
+  module: agent_library_cli
+  status: untested
+  docstring: "\n    Purposeful re-use of stream_terminal_output to print the dev stamp\
+    \ so I don't have to type it out every time.\n\n    :param dev_stamp: The dev\
+    \ stamp to stream.\n    :returns: Prints streaming dev stamp to terminal\n    "
+- name: toilet_banner_metal
+  module: agent_library_cli
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Metal\n\n    :param text: The text to bannerize.\n    :return: Print\
+    \ the bannerized text.\n    "
+chat_cli:
+- name: print_chat_intro
+  module: chat_cli
+  status: untested
+  docstring: null
+- name: print_chat_menu
+  module: chat_cli
+  status: untested
+  docstring: "\n    Menu for the chat lobby. \n    "
+- name: print_dev_stamp
+  module: chat_cli
+  status: untested
+  docstring: "\n    Purposeful re-use of stream_terminal_output to print the dev stamp\
+    \ so I don't have to type it out every time.\n\n    :param dev_stamp: The dev\
+    \ stamp to stream.\n    :returns: Prints streaming dev stamp to terminal\n    "
+- name: toilet_banner_metal
+  module: chat_cli
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Metal\n\n    :param text: The text to bannerize.\n    :return: Print\
+    \ the bannerized text.\n    "
+text_editor_cli:
+- name: main
+  module: text_editor_cli
+  status: untested
+  docstring: Run the editor.
+- name: re_tab
+  module: text_editor_cli
+  status: untested
+  docstring: Return a tabbed string from an expanded one.
+wolfram_search:
+- name: main
+  module: wolfram_search
+  status: untested
+  docstring: "\n    Query the wolfram alpha api and return the response. Currently\
+    \ just prints the response to stdout and runs as main.\n\n    :param query: The\
+    \ query to use. (\"This is a query\")\n    :return: The response from the api.\n\
+    \    "
+dir_checksum:
+- name: calculate_directory_checksum
+  module: dir_checksum
+  status: untested
+  docstring: null
+- name: calculate_file_checksum
+  module: dir_checksum
+  status: untested
+  docstring: null
+wikipedia_search:
+- name: detect_encoding
+  module: wikipedia_search
+  status: untested
+  docstring: null
+- name: load_dotenv
+  module: wikipedia_search
+  status: untested
+  docstring: "Parse a .env file and then load all the variables found as environment\
+    \ variables.\n\n    Parameters:\n        dotenv_path: Absolute or relative path\
+    \ to .env file.\n        stream: Text stream (such as `io.StringIO`) with .env\
+    \ content, used if\n            `dotenv_path` is `None`.\n        verbose: Whether\
+    \ to output a warning the .env file is missing.\n        override: Whether to\
+    \ override the system environment variables with the variables\n            from\
+    \ the `.env` file.\n        encoding: Encoding to be used to read the file.\n\
+    \    Returns:\n        Bool: True if at least one environment variable is set\
+    \ else False\n\n    If both `dotenv_path` and `stream` are `None`, `find_dotenv()`\
+    \ is used to find the\n    .env file.\n    "
+- name: o_wikipedia_get_search_article
+  module: wikipedia_search
+  status: untested
+  docstring: "\n    A slightly beefier version of wikipedia_get_search_article() that\
+    \ also saves the article content to a file.\n\n    :param query: The query to\
+    \ search Wikipedia for.\n    :returns: A .txt file containing the article content\
+    \ saved to agent directory.\n    "
+- name: parse_wikipedia_article
+  module: wikipedia_search
+  status: untested
+  docstring: "\n    Parse http response for a wikipedia article.\n\n    :param response:\
+    \ The http response to parse.\n    :returns: The title and content of the wikipedia\
+    \ article.\n    "
+- name: remove_references
+  module: wikipedia_search
+  status: untested
+  docstring: "\n    Remove citation references from wikipedia article text by removing\
+    \ text between square brackets and the square brackets themselves.\n\n    :param\
+    \ text: The text to remove references from.\n    "
+- name: wikipedia_get_random_article
+  module: wikipedia_search
+  status: untested
+  docstring: null
+- name: wikipedia_get_search_article
+  module: wikipedia_search
+  status: untested
+  docstring: "\n    Search Wikipedia for the query and get the first result's title\
+    \ and content.\n\n    :param query: The query to search Wikipedia for.\n    :returns:\
+    \ A .txt file containing the article content saved to agent directory.\n    "
+deletecollection:
+- name: chroma_delete_collection
+  module: deletecollection
+  status: untested
+  docstring: "\n    Deleta a collection from the chroma database.\n\n    :param name:\
+    \ The name of the collection to delete.\n    "
+- name: main
+  module: deletecollection
+  status: untested
+  docstring: null
+utilities:
+- name: chroma_results_format_to_prompt
+  module: utilities
+  status: untested
+  docstring: null
+- name: create_agent_structure
+  module: utilities
+  status: untested
+  docstring: "\n    Create the agent directory structure and copy any template files\
+    \ needed.\n    \n    :param agent_name: The name of the agent\n    :returns: Agent\
+    \ directory and instructions templates for mostly-semi-seamless integration\n\
+    \    "
+- name: debug_print_function_return
+  module: utilities
+  status: untested
+  docstring: "\n    Debug print function return value\n\n    :param function_name:\
+    \ The name of the function.\n    :param return_value: The return value of the\
+    \ function.\n    :returns: Prints the return value of a function to the terminal.\n\
+    \    "
+- name: format_chat_history
+  module: utilities
+  status: untested
+  docstring: "\n    Formats the chat history for display.\n    "
+- name: message_cache_format_to_prompt
+  module: utilities
+  status: untested
+  docstring: null
+- name: overwrite_yaml_with_literal_block
+  module: utilities
+  status: untested
+  docstring: "\n    Overwrite a YAML file with the contents of a dictionary, preserving\
+    \ multi-line strings.\n\n    :param file_path: Path to the YAML file.\n    :param\
+    \ data_dict: The dictionary containing the new data.\n    "
+- name: parse_model_file
+  module: utilities
+  status: untested
+  docstring: "\n    * Modelfile parser\n    Parse a Modelfile and return a dictionary\
+    \ of sections. Primarily intended for updates to the Modelfile. Not currently\
+    \ in use.\n    "
+- name: print_dev_stamp
+  module: utilities
+  status: untested
+  docstring: "\n    Purposeful re-use of stream_terminal_output to print the dev stamp\
+    \ so I don't have to type it out every time.\n\n    :param dev_stamp: The dev\
+    \ stamp to stream.\n    :returns: Prints streaming dev stamp to terminal\n    "
+- name: print_main_banner
+  module: utilities
+  status: untested
+  docstring: "\n    Prints the main banner at init.\n\n    :returns: Prints main banner\
+    \ to terminal\n    "
+- name: stream_agent_response
+  module: utilities
+  status: untested
+  docstring: "\n    Print string one character at a time.\n\n    param text: The string\
+    \ to print\n    param delay: The delay between printing each character\n    returns:\
+    \ Prints streaming text to terminal with Agent_Name prepended for terminal chat\
+    \ formatting.\n    "
+- name: stream_disco_def
+  module: utilities
+  status: untested
+  docstring: "\n    Streams the verbose definition of DISCO.\n\n    :returns: Prints\
+    \ streaming DISCO definitions to terminal\n    "
+- name: stream_terminal_output
+  module: utilities
+  status: untested
+  docstring: "\n    Print string one character at a time with a defined delay between\
+    \ characters. I do not like relying on streaming methods from completion endpoints.\
+    \ This is a better way to do it anyway. Agents can talk at different speeds depending\
+    \ on need and will be able to be changed en-chat with a parsed command (eventually)\n\
+    \n    :param text: The string to print\n    :param delay: The delay between printing\
+    \ each character\n    :returns: Prints streaming text to terminal\n    "
+- name: toilet_banner_border_metal
+  module: utilities
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Borderized:Metal\n    "
+- name: toilet_banner_metal
+  module: utilities
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Metal\n\n    :param text: The text to bannerize.\n    :return: Print\
+    \ the bannerized text.\n    "
+- name: toilet_banner_plain
+  module: utilities
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Plain\n\n    :param text: The text to bannerize.\n    "
+- name: update_parameters
+  module: utilities
+  status: untested
+  docstring: "\n    * Modelfile editor\n    Update the parameters in a Modelfile.\
+    \ Not currently in use.\n\n    :param parameters: The parameters to update as\
+    \ list.\n    "
+- name: validate_function_return_format
+  module: utilities
+  status: untested
+  docstring: "\n    Function return value review prompt\n\n    :param function_name:\
+    \ The name of the function.\n    :param return_value: The return value of the\
+    \ function.\n    :returns: My sanity during debugging.\n    "
+- name: validate_function_return_type
+  module: utilities
+  status: untested
+  docstring: "\n    Validates the return value of a function.\n\n    :param function_name:\
+    \ The name of the function.\n    :param return_value: The return value of the\
+    \ function.\n    :param expected_type: The expected type of the return value.\n\
+    \    "
+- name: yml_load_agents_list
+  module: utilities
+  status: untested
+  docstring: "\n    Load the projects from the YAML file into a Python dictionary.\n\
+    \n    :returns: Dictionary of existing agents\n    "
+encrypt:
+- name: decrypt_data
+  module: encrypt
+  status: untested
+  docstring: "\n    Decrypt AES encrypted data.\n\n    :param key: The encryption\
+    \ key to use.\n    :param data: The data to decrypt.\n    :returns: The decrypted\
+    \ data.\n    "
+- name: encrypt_data
+  module: encrypt
+  status: untested
+  docstring: "\n    Implement AES encryption for chat logs and other sensitive data.\n\
+    \n    :param key: The encryption key to use.\n    :param data: The data to encrypt.\n\
+    \    :returns: The encrypted data.\n    "
+- name: main
+  module: encrypt
+  status: untested
+  docstring: "\n    CLI commands for encrypt.\n    "
+sentry:
+- name: check_recent_functions
+  module: sentry
+  status: untested
+  docstring: "\n    Using inspect to call the most recent (n) calls and args\n   \
+    \ :param: number of most recent functions for inspect to pull\n    :returns: \n\
+    \    "
+- name: is_safe_input
+  module: sentry
+  status: untested
+  docstring: "\n     Implement logic to check for safe input here\n    :param input_value:\n\
+    \    :returns: \n    "
+- name: test_function
+  module: sentry
+  status: untested
+  docstring: null
+chroma_handler:
+- name: chroma_collection_change_name
+  module: chroma_handler
+  status: untested
+  docstring: "\n    Change the name of a collection in the chroma database.\n\n  \
+    \  :param collection: The collection to change the name of.\n    :param new_name:\
+    \ The new name of the collection.\n    "
+- name: chroma_delete_collection
+  module: chroma_handler
+  status: untested
+  docstring: "\n    Deleta a collection from the chroma database.\n\n    :param name:\
+    \ The name of the collection to delete.\n    "
+- name: chroma_get_collection
+  module: chroma_handler
+  status: untested
+  docstring: "\n    Load a collection from the chroma database.\n    "
+- name: chroma_get_or_create_collection
+  module: chroma_handler
+  status: untested
+  docstring: "\n    Load a collection from the chroma database. If the collection\
+    \ does not exist, create it.\n\n    :param name: The name of the collection to\
+    \ load or create.\n    "
+- name: chroma_query_collection
+  module: chroma_handler
+  status: untested
+  docstring: "\n    Query a collection and return (n_results) nearest neighbors.\n\
+    \n    :param collection: The collection to query.\n    :param query: The query\
+    \ to use. (\"This is a query\")\n    :param n_results: The number of results to\
+    \ return.\n    returns: A list of results.\n    "
+- name: chroma_results_format_to_prompt
+  module: chroma_handler
+  status: untested
+  docstring: null
+- name: chroma_upser_agent_command
+  module: chroma_handler
+  status: untested
+  docstring: "\n    Add a command to the agent commands collection.\n\n    :param\
+    \ command_name: The name of the command to add.\n    :param command: The command\
+    \ to add.\n    "
+- name: chroma_upsert_to_collection
+  module: chroma_handler
+  status: untested
+  docstring: "\n    Add documents to a collection.\n\n    :param collection: The collection\
+    \ to add documents to.\n    :param documents: A list of documents to add to the\
+    \ collection. ([\"This is a document\", \"This is another document\"])\n    :param\
+    \ metadatas: A list of metadata to add to the collection. ([{\"source\": \"my_source\"\
+    }, {\"source\": \"my_source\"}])\n    :param ids: A list of ids to add to the\
+    \ collection. ([\"id1\", \"id2\"])\n    "
+- name: upsert_chunks_from_corpus
+  module: chroma_handler
+  status: untested
+  docstring: "\n        Upserts chunks from a corpus file into the agent's collection.\
+    \ kb=knowledgebase\n\n        :param corpus_path: The path to the corpus file.\n\
+    \        "
+- name: uuid4
+  module: chroma_handler
+  status: untested
+  docstring: Generate a random UUID.
+library_handler:
+- name: chroma_get_or_create_collection
+  module: library_handler
+  status: untested
+  docstring: "\n    Load a collection from the chroma database. If the collection\
+    \ does not exist, create it.\n\n    :param name: The name of the collection to\
+    \ load or create.\n    "
+- name: split_corpus_into_chunks
+  module: library_handler
+  status: untested
+  docstring: null
+- name: stream_agent_response
+  module: library_handler
+  status: untested
+  docstring: "\n    Print string one character at a time.\n\n    param text: The string\
+    \ to print\n    param delay: The delay between printing each character\n    returns:\
+    \ Prints streaming text to terminal with Agent_Name prepended for terminal chat\
+    \ formatting.\n    "
+agents_handler:
+- name: asdict
+  module: agents_handler
+  status: untested
+  docstring: "Return the fields of a dataclass instance as a new dictionary mapping\n\
+    \    field names to field values.\n\n    Example usage:\n\n      @dataclass\n\
+    \      class C:\n          x: int\n          y: int\n\n      c = C(1, 2)\n   \
+    \   assert asdict(c) == {'x': 1, 'y': 2}\n\n    If given, 'dict_factory' will\
+    \ be used instead of built-in dict.\n    The function applies recursively to field\
+    \ values that are\n    dataclass instances. This will also look into built-in\
+    \ containers:\n    tuples, lists, and dicts.\n    "
+- name: chroma_get_or_create_collection
+  module: agents_handler
+  status: untested
+  docstring: "\n    Load a collection from the chroma database. If the collection\
+    \ does not exist, create it.\n\n    :param name: The name of the collection to\
+    \ load or create.\n    "
+- name: chroma_query_collection
+  module: agents_handler
+  status: untested
+  docstring: "\n    Query a collection and return (n_results) nearest neighbors.\n\
+    \n    :param collection: The collection to query.\n    :param query: The query\
+    \ to use. (\"This is a query\")\n    :param n_results: The number of results to\
+    \ return.\n    returns: A list of results.\n    "
+- name: chroma_results_format_to_prompt
+  module: agents_handler
+  status: untested
+  docstring: null
+- name: chroma_upsert_to_collection
+  module: agents_handler
+  status: untested
+  docstring: "\n    Add documents to a collection.\n\n    :param collection: The collection\
+    \ to add documents to.\n    :param documents: A list of documents to add to the\
+    \ collection. ([\"This is a document\", \"This is another document\"])\n    :param\
+    \ metadatas: A list of metadata to add to the collection. ([{\"source\": \"my_source\"\
+    }, {\"source\": \"my_source\"}])\n    :param ids: A list of ids to add to the\
+    \ collection. ([\"id1\", \"id2\"])\n    "
+- name: dataclass
+  module: agents_handler
+  status: untested
+  docstring: "Returns the same class as was passed in, with dunder methods\n    added\
+    \ based on the fields defined in the class.\n\n    Examines PEP 526 __annotations__\
+    \ to determine fields.\n\n    If init is true, an __init__() method is added to\
+    \ the class. If\n    repr is true, a __repr__() method is added. If order is true,\
+    \ rich\n    comparison dunder methods are added. If unsafe_hash is true, a\n \
+    \   __hash__() method function is added. If frozen is true, fields may\n    not\
+    \ be assigned to after instance creation. If match_args is true,\n    the __match_args__\
+    \ tuple is added. If kw_only is true, then by\n    default all fields are keyword-only.\
+    \ If slots is true, an\n    __slots__ attribute is added.\n    "
+- name: debug_print_function_return
+  module: agents_handler
+  status: untested
+  docstring: "\n    Debug print function return value\n\n    :param function_name:\
+    \ The name of the function.\n    :param return_value: The return value of the\
+    \ function.\n    :returns: Prints the return value of a function to the terminal.\n\
+    \    "
+- name: message_cache_format_to_prompt
+  module: agents_handler
+  status: untested
+  docstring: null
+- name: start_new_conversation
+  module: agents_handler
+  status: untested
+  docstring: "\n    Starts a new conversation and returns the conversation UUID.\n\
+    \n    :param host: The name of the host\n    :param host_is_bot: Whether the host\
+    \ is a bot\n    :param guest: The name of the guest agent\n    :param guest_is_bot:\
+    \ Whether the guest is a bot\n\n    :return: Conversation object\n    "
+- name: stream_agent_response
+  module: agents_handler
+  status: untested
+  docstring: "\n    Print string one character at a time.\n\n    param text: The string\
+    \ to print\n    param delay: The delay between printing each character\n    returns:\
+    \ Prints streaming text to terminal with Agent_Name prepended for terminal chat\
+    \ formatting.\n    "
+- name: toilet_banner_metal
+  module: agents_handler
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Metal\n\n    :param text: The text to bannerize.\n    :return: Print\
+    \ the bannerized text.\n    "
+- name: toilet_banner_plain
+  module: agents_handler
+  status: untested
+  docstring: "\n    Toilet subprocess helper for simple pre-stylized banner for prettier\
+    \ outputs. -> Plain\n\n    :param text: The text to bannerize.\n    "
+- name: uuid4
+  module: agents_handler
+  status: untested
+  docstring: Generate a random UUID.
+conversation_handler:
+- name: append_turn_to_conversation_yaml
+  module: conversation_handler
+  status: untested
+  docstring: "\n    Appends a turn to the specified conversation in the YAML file.\n\
+    \n    :param conversation_file_path: The file path of the YAML file.\n    :param\
+    \ conversation_uuid: The UUID of the conversation to append to.\n    :param turn:\
+    \ The turn data to append.\n    "
+- name: asdict
+  module: conversation_handler
+  status: untested
+  docstring: "Return the fields of a dataclass instance as a new dictionary mapping\n\
+    \    field names to field values.\n\n    Example usage:\n\n      @dataclass\n\
+    \      class C:\n          x: int\n          y: int\n\n      c = C(1, 2)\n   \
+    \   assert asdict(c) == {'x': 1, 'y': 2}\n\n    If given, 'dict_factory' will\
+    \ be used instead of built-in dict.\n    The function applies recursively to field\
+    \ values that are\n    dataclass instances. This will also look into built-in\
+    \ containers:\n    tuples, lists, and dicts.\n    "
+- name: dataclass
+  module: conversation_handler
+  status: untested
+  docstring: "Returns the same class as was passed in, with dunder methods\n    added\
+    \ based on the fields defined in the class.\n\n    Examines PEP 526 __annotations__\
+    \ to determine fields.\n\n    If init is true, an __init__() method is added to\
+    \ the class. If\n    repr is true, a __repr__() method is added. If order is true,\
+    \ rich\n    comparison dunder methods are added. If unsafe_hash is true, a\n \
+    \   __hash__() method function is added. If frozen is true, fields may\n    not\
+    \ be assigned to after instance creation. If match_args is true,\n    the __match_args__\
+    \ tuple is added. If kw_only is true, then by\n    default all fields are keyword-only.\
+    \ If slots is true, an\n    __slots__ attribute is added.\n    "
+- name: field
+  module: conversation_handler
+  status: untested
+  docstring: "Return an object to identify dataclass fields.\n\n    default is the\
+    \ default value of the field.  default_factory is a\n    0-argument function called\
+    \ to initialize a field's value.  If init\n    is true, the field will be a parameter\
+    \ to the class's __init__()\n    function.  If repr is true, the field will be\
+    \ included in the\n    object's repr().  If hash is true, the field will be included\
+    \ in the\n    object's hash().  If compare is true, the field will be used in\n\
+    \    comparison functions.  metadata, if specified, must be a mapping\n    which\
+    \ is stored but not otherwise examined by dataclass.  If kw_only\n    is true,\
+    \ the field will become a keyword-only parameter to\n    __init__().\n\n    It\
+    \ is an error to specify both default and default_factory.\n    "
+- name: format_chat_history
+  module: conversation_handler
+  status: untested
+  docstring: "\n    Formats the chat history for display.\n    "
+- name: start_new_conversation
+  module: conversation_handler
+  status: untested
+  docstring: "\n    Starts a new conversation and returns the conversation UUID.\n\
+    \n    :param host: The name of the host\n    :param host_is_bot: Whether the host\
+    \ is a bot\n    :param guest: The name of the guest agent\n    :param guest_is_bot:\
+    \ Whether the guest is a bot\n\n    :return: Conversation object\n    "
+- name: uuid4
+  module: conversation_handler
+  status: untested
+  docstring: Generate a random UUID.
+ollama_handler:
+- name: ollama_copy_model
+  module: ollama_handler
+  status: untested
+  docstring: "\n    Copies a model from one name to another. Intended for use during\
+    \ fine-tuning or new model creation.\n\n    :param src_model_name: The name of\
+    \ the model to copy.\n    :param dest_model_name: The name of the new model.\n\
+    \    "
+- name: ollama_create_model_from_modelfile
+  module: ollama_handler
+  status: untested
+  docstring: "\n    Uses the Modelfile to create a new model.\n\n    :param model_name:\
+    \ The name of the model to create.\n    "
+- name: ollama_list_downloaded_models
+  module: ollama_handler
+  status: untested
+  docstring: "\n    Lists all the models you have downloaded from the Ollama server.\n\
+    \    "
+- name: ollama_pull_model
+  module: ollama_handler
+  status: untested
+  docstring: "\n    Download a model from the Ollama server.\n\n    :param model_name:\
+    \ The name of the model to download.\n    "
+- name: ollama_remove_model
+  module: ollama_handler
+  status: untested
+  docstring: "\n    Remove a model from your local Ollama repo.\n\n    :param model_name:\
+    \ The name of the model to remove.\n    "

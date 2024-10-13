@@ -1,0 +1,22 @@
+# DISCO CHAT by 3Juliet, AI
+
+## Overview
+This application is a subsidiary of another project in development, our ROVER project which will be
+
+## Installation
+Instructions on how to install and set up your project.
+
+## Usage
+How to use the application, including basic commands and examples.
+
+## Modules
+- [Main](main.md)
+- [Ollama CLI](ollama_cli.md)
+- [Agent Library CLI](agent_library_cli.md)
+- ... (list other modules with links to their respective Markdown files)
+
+## Contributing
+Guidelines for contributing to the project.
+
+## License
+Details about the license.
